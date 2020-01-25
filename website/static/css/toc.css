@@ -99,3 +99,40 @@
     padding-top: 2rem;
   }
 }
+
+/** SubNavGroup **/
+.toc .toggleNav ul .subNavGroup .navItem {
+  padding-left: 16px;
+}
+
+.toc .toggleNav .navGroup .subNavGroup .navListItem::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0px;
+  bottom: 0px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.toc .toggleNav .navGroup .subNavGroup .navGroupSubcategoryTitle {
+  font-weight: 600;
+}
+
+.toc .toggleNav ul .subNavGroup li.navListItemActive::before {
+  content: "";
+  background-color: inherit;
+  position: absolute;
+  width: 5px;
+  top: 2px;
+  left: -20px;
+  bottom: 2px;
+}
+
+.toc .toggleNav ul .subNavGroup li.navListItemActive::after {
+  content: "";
+  background-color: $brand;
+  position: absolute;
+  width: 5px;
+  top: 2px;
+  bottom: 2px;
+}
