@@ -7,12 +7,42 @@
       "handling-text-input",
       "using-a-scrollview",
       "using-a-listview",
-      "troubleshooting",
-      "platform-specific-code",
+      "network",
       "more-resources"
+    ],
+    "Guides": [
+      {
+        "type": "subcategory",
+        "label": "Design",
+        "ids": ["style", "height-and-width", "flexbox", "images", "colors"]
+      },
+      {
+        "type": "subcategory",
+        "label": "Interaction",
+        "ids": [
+          "handling-touches",
+          "navigation",
+          "animations",
+          "gesture-responder-system"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Inclusion",
+        "ids": ["accessibility"]
+      },
+      {
+        "type": "subcategory",
+        "label": "Performance",
+        "ids": ["performance", "hermes", "optimizing-flatlist-configuration"]
+      },
+      "timers",
+      "javascript-environment",
+      "platform-specific-code"
     ],
     "Environment setup": [
       "getting-started",
+      "troubleshooting",
       "integration-with-existing-apps",
       "building-for-apple-tv",
       "out-of-tree-platforms"
@@ -24,17 +54,6 @@
       "typescript",
       "upgrading"
     ],
-    "Design": ["style", "height-and-width", "flexbox", "images", "colors"],
-    "Interaction": [
-      "handling-touches",
-      "navigation",
-      "animations",
-      "gesture-responder-system"
-    ],
-    "Inclusion": ["accessibility"],
-    "Performance": ["performance", "optimizing-flatlist-configuration"],
-    "JavaScript Runtime": ["javascript-environment", "timers", "hermes"],
-    "Connectivity": ["network"],
     "Native Components and Modules": [
       "native-modules-setup",
       "direct-manipulation"
