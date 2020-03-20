@@ -19,16 +19,19 @@ export default class DisplayAnImage extends Component {
     return (
       <View>
         <Image
-          style={{width: 50, height: 50}}
+          style={{ width: 50, height: 50 }}
           source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Image
-          style={{width: 50, height: 50}}
-          source={{uri: 'https://reactjs.org/logo-og.png'}}
+          style={{ width: 50, height: 50 }}
+          source={{ uri: 'https://reactjs.org/logo-og.png' }}
         />
         <Image
-          style={{width: 66, height: 58}}
-          source={{uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='}}
+          style={{ width: 66, height: 58 }}
+          source={{
+            uri:
+              'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='
+          }}
         />
       </View>
     );

@@ -12,21 +12,27 @@ title: 🚧 Clipboard
 ## Example
 
 ```SnackPlayer name=Clipboard%20API%20Example&supportedPlatforms=ios,android
-
-import React, { useState } from 'react'
-import { SafeAreaView, View, Text, TouchableOpacity, Clipboard, StyleSheet } from 'react-native'
+import React, { useState } from 'react';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  TouchableOpacity,
+  Clipboard,
+  StyleSheet
+} from 'react-native';
 
 const App = () => {
-  const [copiedText, setCopiedText] = useState('')
+  const [copiedText, setCopiedText] = useState('');
 
   const copyToClipboard = () => {
-    Clipboard.setString('hello world')
-  }
+    Clipboard.setString('hello world');
+  };
 
   const fetchCopiedText = async () => {
-    const text = await Clipboard.getString()
-    setCopiedText(text)
-  }
+    const text = await Clipboard.getString();
+    setCopiedText(text);
+  };
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -40,10 +46,9 @@ const App = () => {
 
         <Text style={styles.copiedText}>{copiedText}</Text>
       </View>
-
     </SafeAreaView>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -55,9 +60,9 @@ const styles = StyleSheet.create({
     marginTop: 10,
     color: 'red'
   }
-})
+});
 
-export default App
+export default App;
 ```
 
 # Reference

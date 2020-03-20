@@ -5,9 +5,7 @@ title: Layout Props
 
 ## Example
 
-The following example shows how different properties can affect or shape a React Native layout.
-You can try for example to add or remove squares from the UI while changing the values of the property `flexWrap`.
-Find more detailed examples about this properties in the [Layout with Flexbox](flexbox) docs page.
+The following example shows how different properties can affect or shape a React Native layout. You can try for example to add or remove squares from the UI while changing the values of the property `flexWrap`. Find more detailed examples about this properties in the [Layout with Flexbox](flexbox) docs page.
 
 ```SnackPlayer name=LayoutProps%20Example
 import React, { useState } from 'react';
@@ -22,14 +20,14 @@ const App = () => {
     'center',
     'space-between',
     'space-around',
-    'space-evenly',
+    'space-evenly'
   ];
   const alignItemsArr = [
     'flex-start',
     'flex-end',
     'center',
     'stretch',
-    'baseline',
+    'baseline'
   ];
   const wraps = ['nowrap', 'wrap', 'wrap-reverse'];
   const directions = ['inherit', 'ltr', 'rtl'];
@@ -44,7 +42,7 @@ const App = () => {
     justifyContent: justifyContents[justifyContent],
     alignItems: alignItemsArr[alignItems],
     direction: directions[direction],
-    flexWrap: wraps[wrap],
+    flexWrap: wraps[wrap]
   };
 
   const changeSetting = (value, options, setterFunction) => {
@@ -59,7 +57,7 @@ const App = () => {
     const sqStyle = {
       width: 50,
       height: 50,
-      backgroundColor: randomHexColor(),
+      backgroundColor: randomHexColor()
     };
     return <View style={sqStyle} />;
   };
@@ -68,7 +66,7 @@ const App = () => {
     <>
       <View style={{ paddingTop: Constants.statusBarHeight }} />
       <View style={[styles.container, styles.playingSpace, hookedStyles]}>
-        {squares.map(elem => elem)}
+        {squares.map((elem) => elem)}
       </View>
       <ScrollView style={[styles.container]}>
         <View style={[styles.controlSpace]}>
@@ -139,23 +137,23 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    height: '50%',
+    height: '50%'
   },
   playingSpace: {
     backgroundColor: 'white',
     borderColor: 'blue',
-    borderWidth: 3,
+    borderWidth: 3
   },
   controlSpace: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    backgroundColor: '#F5F5F5',
+    backgroundColor: '#F5F5F5'
   },
   buttonView: {
     width: '50%',
-    padding: 10,
+    padding: 10
   },
-  text: { textAlign: 'center' },
+  text: { textAlign: 'center' }
 });
 
 const randomHexColor = () => {

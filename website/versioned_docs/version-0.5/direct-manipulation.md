@@ -71,7 +71,7 @@ class MyButton extends React.Component {
       <View>
         <Text>{this.props.label}</Text>
       </View>
-    )
+    );
   }
 }
 
@@ -81,7 +81,7 @@ export default class App extends React.Component {
       <TouchableOpacity>
         <MyButton label="Press me!" />
       </TouchableOpacity>
-    )
+    );
   }
 }
 ```
@@ -99,14 +99,14 @@ import { Text, TouchableOpacity, View } from 'react-native';
 class MyButton extends React.Component {
   setNativeProps = (nativeProps) => {
     this._root.setNativeProps(nativeProps);
-  }
+  };
 
   render() {
     return (
-      <View ref={component => this._root = component} {...this.props}>
+      <View ref={(component) => (this._root = component)} {...this.props}>
         <Text>{this.props.label}</Text>
       </View>
-    )
+    );
   }
 }
 
@@ -116,7 +116,7 @@ export default class App extends React.Component {
       <TouchableOpacity>
         <MyButton label="Press me!" />
       </TouchableOpacity>
-    )
+    );
   }
 }
 ```
@@ -135,15 +135,21 @@ import { TextInput, Text, TouchableOpacity, View } from 'react-native';
 
 export default class App extends React.Component {
   clearText = () => {
-    this._textInput.setNativeProps({text: ''});
-  }
+    this._textInput.setNativeProps({ text: '' });
+  };
 
   render() {
     return (
-      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <TextInput
-          ref={component => this._textInput = component}
-          style={{height: 50, width: 200, marginHorizontal: 20, borderWidth: 1, borderColor: '#ccc'}}
+          ref={(component) => (this._textInput = component)}
+          style={{
+            height: 50,
+            width: 200,
+            marginHorizontal: 20,
+            borderWidth: 1,
+            borderColor: '#ccc'
+          }}
         />
         <TouchableOpacity onPress={this.clearText}>
           <Text>Clear text</Text>

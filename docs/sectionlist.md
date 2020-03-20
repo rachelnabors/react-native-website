@@ -34,32 +34,32 @@ If you don't need section support and want a simpler interface, use [`<FlatList>
 <block class="functional syntax" />
 
 ```SnackPlayer name=SectionList%20Example
-import React from "react";
+import React from 'react';
 import {
   StyleSheet,
   Text,
   View,
   SafeAreaView,
   SectionList
-} from "react-native";
-import Constants from "expo-constants";
+} from 'react-native';
+import Constants from 'expo-constants';
 
 const DATA = [
   {
-    title: "Main dishes",
-    data: ["Pizza", "Burger", "Risotto"]
+    title: 'Main dishes',
+    data: ['Pizza', 'Burger', 'Risotto']
   },
   {
-    title: "Sides",
-    data: ["French Fries", "Onion Rings", "Fried Shrimps"]
+    title: 'Sides',
+    data: ['French Fries', 'Onion Rings', 'Fried Shrimps']
   },
   {
-    title: "Drinks",
-    data: ["Water", "Coke", "Beer"]
+    title: 'Drinks',
+    data: ['Water', 'Coke', 'Beer']
   },
   {
-    title: "Desserts",
-    data: ["Cheese Cake", "Ice Cream"]
+    title: 'Desserts',
+    data: ['Cheese Cake', 'Ice Cream']
   }
 ];
 
@@ -91,13 +91,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 16
   },
   item: {
-    backgroundColor: "#f9c2ff",
+    backgroundColor: '#f9c2ff',
     padding: 20,
     marginVertical: 8
   },
   header: {
     fontSize: 32,
-    backgroundColor: "#fff"
+    backgroundColor: '#fff'
   },
   title: {
     fontSize: 24
@@ -108,32 +108,32 @@ const styles = StyleSheet.create({
 <block class="classical syntax" />
 
 ```SnackPlayer name=SectionList%20Example
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
   View,
   SafeAreaView,
   SectionList
-} from "react-native";
-import Constants from "expo-constants";
+} from 'react-native';
+import Constants from 'expo-constants';
 
 const DATA = [
   {
-    title: "Main dishes",
-    data: ["Pizza", "Burger", "Risotto"]
+    title: 'Main dishes',
+    data: ['Pizza', 'Burger', 'Risotto']
   },
   {
-    title: "Sides",
-    data: ["French Fries", "Onion Rings", "Fried Shrimps"]
+    title: 'Sides',
+    data: ['French Fries', 'Onion Rings', 'Fried Shrimps']
   },
   {
-    title: "Drinks",
-    data: ["Water", "Coke", "Beer"]
+    title: 'Drinks',
+    data: ['Water', 'Coke', 'Beer']
   },
   {
-    title: "Desserts",
-    data: ["Cheese Cake", "Ice Cream"]
+    title: 'Desserts',
+    data: ['Cheese Cake', 'Ice Cream']
   }
 ];
 
@@ -169,13 +169,13 @@ const styles = StyleSheet.create({
     marginHorizontal: 16
   },
   item: {
-    backgroundColor: "#f9c2ff",
+    backgroundColor: '#f9c2ff',
     padding: 20,
     marginVertical: 8
   },
   header: {
     fontSize: 32,
-    backgroundColor: "#fff"
+    backgroundColor: '#fff'
   },
   title: {
     fontSize: 24

@@ -14,12 +14,12 @@ import {
   RefreshControl,
   StyleSheet,
   Text,
-  SafeAreaView,
+  SafeAreaView
 } from 'react-native';
 import Constants from 'expo-constants';
 
 function wait(timeout) {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     setTimeout(resolve, timeout);
   });
 }
@@ -50,14 +50,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: Constants.statusBarHeight,
+    marginTop: Constants.statusBarHeight
   },
   scrollView: {
     flex: 1,
     backgroundColor: 'pink',
     alignItems: 'center',
-    justifyContent: 'center',
-  },
+    justifyContent: 'center'
+  }
 });
 ```
 

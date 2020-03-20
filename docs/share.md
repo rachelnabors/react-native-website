@@ -22,12 +22,12 @@ title: Share
 import React from 'react';
 import { Share, View, Button } from 'react-native';
 
-export default ShareExample = () => {
+export default (ShareExample = () => {
   const onShare = async () => {
     try {
       const result = await Share.share({
         message:
-          'React Native | A framework for building native apps using React',
+          'React Native | A framework for building native apps using React'
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
@@ -47,7 +47,7 @@ export default ShareExample = () => {
       <Button onPress={onShare} title="Share" />
     </View>
   );
-};
+});
 ```
 
 <block class="classical syntax" />
@@ -61,7 +61,7 @@ class ShareExample extends Component {
     try {
       const result = await Share.share({
         message:
-          'React Native | A framework for building native apps using React',
+          'React Native | A framework for building native apps using React'
       });
 
       if (result.action === Share.sharedAction) {

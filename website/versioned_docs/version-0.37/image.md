@@ -17,12 +17,12 @@ class DisplayAnImage extends Component {
     return (
       <View>
         <Image
-          style={{width: 50, height: 50}}
+          style={{ width: 50, height: 50 }}
           source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Image
-          style={{width: 50, height: 50}}
-          source={{uri: 'https://reactjs.org/logo-og.png'}}
+          style={{ width: 50, height: 50 }}
+          source={{ uri: 'https://reactjs.org/logo-og.png' }}
         />
       </View>
     );
@@ -37,7 +37,7 @@ You can also add `style` to an image:
 
 ```SnackPlayer
 import React, { Component } from 'react';
-import { AppRegistry, View, Image, StyleSheet} from 'react-native';
+import { AppRegistry, View, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   stretch: {

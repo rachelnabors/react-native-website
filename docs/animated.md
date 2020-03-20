@@ -46,8 +46,8 @@ The following example contains a `View` which will fade in and fade out based on
 <block class="functional syntax" />
 
 ```SnackPlayer name=Animated
-import React, { useRef } from "react";
-import { Animated, Text, View, StyleSheet, Button } from "react-native";
+import React, { useRef } from 'react';
+import { Animated, Text, View, StyleSheet, Button } from 'react-native';
 
 export default function App() {
   // fadeAnim will be used as the value for opacity. Initial Value: 0
@@ -92,21 +92,21 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   fadingContainer: {
     paddingVertical: 8,
     paddingHorizontal: 16,
-    backgroundColor: "powderblue"
+    backgroundColor: 'powderblue'
   },
   fadingText: {
     fontSize: 28,
-    textAlign: "center",
+    textAlign: 'center',
     margin: 10
   },
   buttonRow: {
-    flexDirection: "row",
+    flexDirection: 'row',
     marginVertical: 16
   }
 });
@@ -115,8 +115,8 @@ const styles = StyleSheet.create({
 <block class="classical syntax" />
 
 ```SnackPlayer name=Animated
-import React, { Component } from "react";
-import { Animated, Text, View, StyleSheet, Button } from "react-native";
+import React, { Component } from 'react';
+import { Animated, Text, View, StyleSheet, Button } from 'react-native';
 
 class App extends Component {
   // fadeAnim will be used as the value for opacity. Initial Value: 0
@@ -165,21 +165,21 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   fadingContainer: {
     paddingVertical: 8,
     paddingHorizontal: 16,
-    backgroundColor: "powderblue"
+    backgroundColor: 'powderblue'
   },
   fadingText: {
     fontSize: 28,
-    textAlign: "center",
+    textAlign: 'center',
     margin: 10
   },
   buttonRow: {
-    flexDirection: "row",
+    flexDirection: 'row',
     marginVertical: 16
   }
 });

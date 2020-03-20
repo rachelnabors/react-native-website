@@ -100,11 +100,10 @@ const ExampleComponent = () => {
 <block class="functional syntax" />
 
 ```SnackPlayer name=PanResponder
-import React, { useRef } from "react";
-import { Animated, View, StyleSheet, PanResponder, Text } from "react-native";
+import React, { useRef } from 'react';
+import { Animated, View, StyleSheet, PanResponder, Text } from 'react-native';
 
 export default function App() {
-
   const pan = useRef(new Animated.ValueXY()).current;
 
   const panResponder = useRef(
@@ -116,12 +115,7 @@ export default function App() {
           y: pan.y._value
         });
       },
-      onPanResponderMove: Animated.event(
-        [
-          null,
-          { dx: pan.x, dy: pan.y }
-        ]
-      ),
+      onPanResponderMove: Animated.event([null, { dx: pan.x, dy: pan.y }]),
       onPanResponderRelease: () => {
         pan.flattenOffset();
       }
@@ -146,18 +140,18 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   titleText: {
     fontSize: 14,
     lineHeight: 24,
-    fontWeight: "bold"
+    fontWeight: 'bold'
   },
   box: {
     height: 150,
     width: 150,
-    backgroundColor: "blue",
+    backgroundColor: 'blue',
     borderRadius: 5
   }
 });
@@ -166,8 +160,8 @@ const styles = StyleSheet.create({
 <block class="classical syntax" />
 
 ```SnackPlayer name=PanResponder
-import React, { Component } from "react";
-import { Animated, View, StyleSheet, PanResponder, Text } from "react-native";
+import React, { Component } from 'react';
+import { Animated, View, StyleSheet, PanResponder, Text } from 'react-native';
 
 export default class App extends Component {
   pan = new Animated.ValueXY();
@@ -208,18 +202,18 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
+    alignItems: 'center',
+    justifyContent: 'center'
   },
   titleText: {
     fontSize: 14,
     lineHeight: 24,
-    fontWeight: "bold"
+    fontWeight: 'bold'
   },
   box: {
     height: 150,
     width: 150,
-    backgroundColor: "blue",
+    backgroundColor: 'blue',
     borderRadius: 5
   }
 });

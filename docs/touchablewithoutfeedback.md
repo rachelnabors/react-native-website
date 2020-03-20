@@ -26,8 +26,8 @@ function MyComponent(props) {
 ## Example
 
 ```SnackPlayer name=TouchableWithoutFeedback
-import React, { useState } from "react";
-import { StyleSheet, TouchableWithoutFeedback, Text, View } from "react-native";
+import React, { useState } from 'react';
+import { StyleSheet, TouchableWithoutFeedback, Text, View } from 'react-native';
 
 export default function TouchableWithoutFeedbackExample() {
   const [count, setCount] = useState(0);
@@ -53,20 +53,20 @@ export default function TouchableWithoutFeedbackExample() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     paddingHorizontal: 10
   },
   button: {
-    alignItems: "center",
-    backgroundColor: "#DDDDDD",
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
     padding: 10
   },
   countContainer: {
-    alignItems: "center",
+    alignItems: 'center',
     padding: 10
   },
   countText: {
-    color: "#FF00FF"
+    color: '#FF00FF'
   }
 });
 ```

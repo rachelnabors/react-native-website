@@ -37,9 +37,7 @@ import React from 'react';
 import { Text } from 'react-native';
 
 export default function Cat() {
-  return (
-    <Text>Hello, I am your cat!</Text>
-  );
+  return <Text>Hello, I am your cat!</Text>;
 }
 ```
 
@@ -84,9 +82,7 @@ import { Text } from 'react-native';
 
 export default class Cat extends Component {
   render() {
-    return (
-      <Text>Hello, I am your cat!</Text>
-    );
+    return <Text>Hello, I am your cat!</Text>;
   }
 }
 ```
@@ -138,10 +134,8 @@ import React from 'react';
 import { Text } from 'react-native';
 
 export default function Cat() {
-  const name = "Maru";
-  return (
-    <Text>Hello, I am {name}!</Text>
-  );
+  const name = 'Maru';
+  return <Text>Hello, I am {name}!</Text>;
 }
 ```
 
@@ -153,14 +147,10 @@ import { Text } from 'react-native';
 
 export default function Cat() {
   function getFullName(firstName, secondName, thirdName) {
-    return firstName + " " + secondName + " " + thirdName;
+    return firstName + ' ' + secondName + ' ' + thirdName;
   }
 
-  return (
-    <Text>
-      Hello, I am {getFullName("Rum", "Tum", "Tugger")}!
-    </Text>
-  );
+  return <Text>Hello, I am {getFullName('Rum', 'Tum', 'Tugger')}!</Text>;
 }
 ```
 
@@ -281,7 +271,7 @@ export default function CatApp() {
     <View>
       <Image
         source="https://reactnative.dev/docs/assets/p_cat1.png"
-        style={{width: 200, height: 200}}
+        style={{ width: 200, height: 200 }}
       />
       <Text>Hello, I am your cat!</Text>
     </View>
@@ -319,8 +309,8 @@ The following example takes place in a cat cafe where two hungry cats are waitin
 You can add state to a component by calling [React’s `useState` Hook](https://reactjs.org/docs/hooks-state.html). A Hook is a kind of function that lets you “hook into” React features. For example, `useState` is a Hook that lets you add state to function components. You can learn more about [other kinds of Hooks in the React documentation.](https://reactjs.org/docs/hooks-intro.html)
 
 ```SnackPlayer name=State
-import React, { useState } from "react";
-import { Button, Text, View } from "react-native";
+import React, { useState } from 'react';
+import { Button, Text, View } from 'react-native';
 
 function Cat(props) {
   const [isHungry, setIsHungry] = useState(true);
@@ -328,14 +318,14 @@ function Cat(props) {
   return (
     <View>
       <Text>
-        I am {props.name}, and I am {isHungry ? "hungry" : "full"}!
+        I am {props.name}, and I am {isHungry ? 'hungry' : 'full'}!
       </Text>
       <Button
         onPress={() => {
           setIsHungry(false);
         }}
         disabled={!isHungry}
-        title={isHungry ? "Pour me some milk, please!" : "Thank you!"}
+        title={isHungry ? 'Pour me some milk, please!' : 'Thank you!'}
       />
     </View>
   );
@@ -416,8 +406,8 @@ export default function Cafe() {
 The older class components approach is a little different when it comes to state.
 
 ```SnackPlayer name=State%20and%20Class%20Components
-import React, { Component } from "react";
-import { Button, Text, View } from "react-native";
+import React, { Component } from 'react';
+import { Button, Text, View } from 'react-native';
 
 export class Cat extends Component {
   state = { isHungry: true };
@@ -427,7 +417,7 @@ export class Cat extends Component {
       <View>
         <Text>
           I am {this.props.name}, and I am
-          {this.state.isHungry ? " hungry" : " full"}!
+          {this.state.isHungry ? ' hungry' : ' full'}!
         </Text>
         <Button
           onPress={() => {
@@ -435,7 +425,7 @@ export class Cat extends Component {
           }}
           disabled={!this.state.isHungry}
           title={
-            this.state.isHungry ? "Pour me some milk, please!" : "Thank you!"
+            this.state.isHungry ? 'Pour me some milk, please!' : 'Thank you!'
           }
         />
       </View>

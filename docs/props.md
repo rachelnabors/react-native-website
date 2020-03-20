@@ -12,12 +12,13 @@ import React, { Component } from 'react';
 import { Image } from 'react-native';
 
 export default function Bananas() {
-    let pic = {
-      uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
-    };
-    return (
-      <Image source={pic} style={{width: 193, height: 110, marginTop:50}}/>
-    );
+  let pic = {
+    uri:
+      'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
+  };
+  return (
+    <Image source={pic} style={{ width: 193, height: 110, marginTop: 50 }} />
+  );
 }
 ```
 
@@ -30,21 +31,21 @@ import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 
 const Greeting = (props) => {
-    return (
-      <View style={{alignItems: 'center'}}>
-        <Text>Hello {props.name}!</Text>
-      </View>
-    );
-}
+  return (
+    <View style={{ alignItems: 'center' }}>
+      <Text>Hello {props.name}!</Text>
+    </View>
+  );
+};
 
 export default function LotsOfGreetings() {
-    return (
-      <View style={{alignItems: 'center', top: 50}}>
-        <Greeting name='Rexxar' />
-        <Greeting name='Jaina' />
-        <Greeting name='Valeera' />
-      </View>
-    );
+  return (
+    <View style={{ alignItems: 'center', top: 50 }}>
+      <Greeting name="Rexxar" />
+      <Greeting name="Jaina" />
+      <Greeting name="Valeera" />
+    </View>
+  );
 }
 ```
 

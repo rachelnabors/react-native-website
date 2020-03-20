@@ -18,7 +18,7 @@ import {
   View,
   SafeAreaView,
   Text,
-  Alert,
+  Alert
 } from 'react-native';
 import Constants from 'expo-constants';
 
@@ -87,21 +87,21 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: Constants.statusBarHeight,
-    marginHorizontal: 16,
+    marginHorizontal: 16
   },
   title: {
     textAlign: 'center',
-    marginVertical: 8,
+    marginVertical: 8
   },
   fixToText: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   separator: {
     marginVertical: 8,
     borderBottomColor: '#737373',
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
+    borderBottomWidth: StyleSheet.hairlineWidth
+  }
 });
 ```
 

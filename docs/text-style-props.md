@@ -6,43 +6,53 @@ title: Text Style Props
 ### Example
 
 ```SnackPlayer name=TextStyleProps&supportedPlatforms=android,ios
-import React, { useState } from "react";
-import { FlatList, Platform, ScrollView, Slider, StyleSheet, Switch, Text, TouchableWithoutFeedback, View } from "react-native";
-import Constants from "expo-constants";
+import React, { useState } from 'react';
+import {
+  FlatList,
+  Platform,
+  ScrollView,
+  Slider,
+  StyleSheet,
+  Switch,
+  Text,
+  TouchableWithoutFeedback,
+  View
+} from 'react-native';
+import Constants from 'expo-constants';
 
-const fontStyles = ["normal", "italic"];
+const fontStyles = ['normal', 'italic'];
 const fontVariants = [
   undefined,
-  "small-caps",
-  "oldstyle-nums",
-  "lining-nums",
-  "tabular-nums",
-  "proportional-nums"
+  'small-caps',
+  'oldstyle-nums',
+  'lining-nums',
+  'tabular-nums',
+  'proportional-nums'
 ];
 const fontWeights = [
-  "normal",
-  "bold",
-  "100",
-  "200",
-  "300",
-  "400",
-  "500",
-  "600",
-  "700",
-  "800",
-  "900"
+  'normal',
+  'bold',
+  '100',
+  '200',
+  '300',
+  '400',
+  '500',
+  '600',
+  '700',
+  '800',
+  '900'
 ];
-const textAlignments = ["auto", "left", "right", "center", "justify"];
+const textAlignments = ['auto', 'left', 'right', 'center', 'justify'];
 const textDecorationLines = [
-  "none",
-  "underline",
-  "line-through",
-  "underline line-through"
+  'none',
+  'underline',
+  'line-through',
+  'underline line-through'
 ];
-const textDecorationStyles = ["solid", "double", "dotted", "dashed"];
-const textTransformations = ["none", "uppercase", "lowercase", "capitalize"];
-const textAlignmentsVertical = ["auto", "top", "bottom", "center"];
-const writingDirections = ["auto", "ltr", "rtl"];
+const textDecorationStyles = ['solid', 'double', 'dotted', 'dashed'];
+const textTransformations = ['none', 'uppercase', 'lowercase', 'capitalize'];
+const textAlignmentsVertical = ['auto', 'top', 'bottom', 'center'];
+const writingDirections = ['auto', 'ltr', 'rtl'];
 
 export default function App() {
   const [fontSize, setFontSize] = useState(10);
@@ -99,8 +109,8 @@ export default function App() {
             value={textShadowOffset.height}
             minimumValue={-40}
             maximumValue={40}
-            handleValueChange={val =>
-              setTextShadowOffset(prev => ({ ...prev, height: val }))
+            handleValueChange={(val) =>
+              setTextShadowOffset((prev) => ({ ...prev, height: val }))
             }
           />
           <CustomSlider
@@ -108,8 +118,8 @@ export default function App() {
             value={textShadowOffset.width}
             minimumValue={-40}
             maximumValue={40}
-            handleValueChange={val =>
-              setTextShadowOffset(prev => ({ ...prev, width: val }))
+            handleValueChange={(val) =>
+              setTextShadowOffset((prev) => ({ ...prev, width: val }))
             }
           />
           <CustomSlider
@@ -173,7 +183,7 @@ export default function App() {
             onSelected={setTextTransformIdx}
           />
         </View>
-        {Platform.OS === "android" && (
+        {Platform.OS === 'android' && (
           <View style={styles.platformContainer}>
             <Text style={styles.platformContainerTitle}>
               Android only properties
@@ -191,7 +201,7 @@ export default function App() {
             />
           </View>
         )}
-        {Platform.OS === "ios" && (
+        {Platform.OS === 'ios' && (
           <View style={styles.platformContainer}>
             <Text style={styles.platformContainerTitle}>
               iOS only properties
@@ -219,10 +229,10 @@ function CustomSwitch({ label, handleValueChange, value }) {
   return (
     <>
       <Text style={styles.title}>{label}</Text>
-      <View style={{ alignItems: "flex-start" }}>
+      <View style={{ alignItems: 'flex-start' }}>
         <Switch
-          trackColor={{ false: "#767577", true: "#DAA520" }}
-          thumbColor={value ? "#DAA520" : "#f4f3f4"}
+          trackColor={{ false: '#767577', true: '#DAA520' }}
+          thumbColor={value ? '#DAA520' : '#f4f3f4'}
           onValueChange={handleValueChange}
           value={value}
         />
@@ -281,12 +291,12 @@ function CustomPicker({ label, data, currentIndex, onSelected }) {
                 >
                   <Text
                     style={{
-                      textAlign: "center",
-                      color: selected ? "black" : "grey",
-                      fontWeight: selected ? "bold" : "normal"
+                      textAlign: 'center',
+                      color: selected ? 'black' : 'grey',
+                      fontWeight: selected ? 'bold' : 'normal'
                     }}
                   >
-                    {item + ""}
+                    {item + ''}
                   </Text>
                 </View>
               </TouchableWithoutFeedback>
@@ -302,20 +312,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: "#ecf0f1",
+    backgroundColor: '#ecf0f1',
     padding: 8
   },
   paragraph: {
-    color: "black",
-    textDecorationColor: "yellow",
-    textShadowColor: "red",
+    color: 'black',
+    textDecorationColor: 'yellow',
+    textShadowColor: 'red',
     textShadowRadius: 1,
     margin: 24
   },
   wrapperHorizontal: {
     height: 54,
-    justifyContent: "center",
-    color: "black",
+    justifyContent: 'center',
+    color: 'black',
     marginBottom: 12
   },
   itemStyleHorizontal: {
@@ -323,14 +333,14 @@ const styles = StyleSheet.create({
     height: 50,
     padding: 8,
     borderWidth: 1,
-    borderColor: "grey",
+    borderColor: 'grey',
     borderRadius: 25,
-    textAlign: "center",
-    justifyContent: "center"
+    textAlign: 'center',
+    justifyContent: 'center'
   },
   itemSelectedStyleHorizontal: {
     borderWidth: 2,
-    borderColor: "#DAA520"
+    borderColor: '#DAA520'
   },
   platformContainer: {
     marginTop: 8,
@@ -340,11 +350,10 @@ const styles = StyleSheet.create({
     marginTop: 8
   },
   title: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
     marginVertical: 4
   }
 });
-
 ```
 
 # Reference

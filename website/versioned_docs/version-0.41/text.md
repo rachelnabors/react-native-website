@@ -27,11 +27,11 @@ class TextInANest extends Component {
     return (
       <Text style={styles.baseText}>
         <Text style={styles.titleText} onPress={this.onPressTitle}>
-          {this.state.titleText}{'\n'}{'\n'}
+          {this.state.titleText}
+          {'\n'}
+          {'\n'}
         </Text>
-        <Text numberOfLines={5}>
-          {this.state.bodyText}
-        </Text>
+        <Text numberOfLines={5}>{this.state.bodyText}</Text>
       </Text>
     );
   }
@@ -39,12 +39,12 @@ class TextInANest extends Component {
 
 const styles = StyleSheet.create({
   baseText: {
-    fontFamily: 'Cochin',
+    fontFamily: 'Cochin'
   },
   titleText: {
     fontSize: 20,
-    fontWeight: 'bold',
-  },
+    fontWeight: 'bold'
+  }
 });
 
 // App registration and rendering

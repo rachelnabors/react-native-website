@@ -40,14 +40,16 @@ export default class FlexDirectionBasics extends Component {
   render() {
     return (
       // Try setting `flexDirection` to `column`.
-      <View style={{flex: 1, flexDirection: 'row'}}>
-        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-        <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-        <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+      <View style={{ flex: 1, flexDirection: 'row' }}>
+        <View
+          style={{ width: 50, height: 50, backgroundColor: 'powderblue' }}
+        />
+        <View style={{ width: 50, height: 50, backgroundColor: 'skyblue' }} />
+        <View style={{ width: 50, height: 50, backgroundColor: 'steelblue' }} />
       </View>
     );
   }
-};
+}
 ```
 
 ![Flex Direction](https://cdn-images-1.medium.com/max/800/1*rA7IbuUsJWsx6evKAsabVw.png)
@@ -87,18 +89,22 @@ export default class JustifyContentBasics extends Component {
     return (
       // Try setting `justifyContent` to `center`.
       // Try setting `flexDirection` to `row`.
-      <View style={{
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-      }}>
-        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-        <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-        <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+      <View
+        style={{
+          flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'space-between'
+        }}
+      >
+        <View
+          style={{ width: 50, height: 50, backgroundColor: 'powderblue' }}
+        />
+        <View style={{ width: 50, height: 50, backgroundColor: 'skyblue' }} />
+        <View style={{ width: 50, height: 50, backgroundColor: 'steelblue' }} />
       </View>
     );
   }
-};
+}
 ```
 
 ![Justify Content](https://cdn-images-1.medium.com/max/800/1*i5TVlme-TisAVvD5ax2yPA.png)
@@ -131,19 +137,23 @@ export default class AlignItemsBasics extends Component {
       // Try setting `alignItems` to 'flex-start'
       // Try setting `justifyContent` to `flex-end`.
       // Try setting `flexDirection` to `row`.
-      <View style={{
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'stretch',
-      }}>
-        <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-        <View style={{height: 50, backgroundColor: 'skyblue'}} />
-        <View style={{height: 100, backgroundColor: 'steelblue'}} />
+      <View
+        style={{
+          flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'stretch'
+        }}
+      >
+        <View
+          style={{ width: 50, height: 50, backgroundColor: 'powderblue' }}
+        />
+        <View style={{ height: 50, backgroundColor: 'skyblue' }} />
+        <View style={{ height: 100, backgroundColor: 'steelblue' }} />
       </View>
     );
   }
-};
+}
 ```
 
 ![Align Items](https://cdn-images-1.medium.com/max/800/1*evkM7zfxt-9p-HJ1M0Bh2g.png)

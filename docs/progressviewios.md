@@ -11,7 +11,7 @@ Uses `ProgressViewIOS` to render a UIProgressView on iOS.
 
 ```SnackPlayer name=ProgressViewIOS&supportedPlatforms=ios
 import React from 'react';
-import {View, StyleSheet, ProgressViewIOS, Text} from 'react-native';
+import { View, StyleSheet, ProgressViewIOS, Text } from 'react-native';
 
 export default function App() {
   return (
@@ -44,14 +44,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   example: {
-    marginVertical: 20,
+    marginVertical: 20
   },
   progress: {
-    width: 200,
-  },
+    width: 200
+  }
 });
 ```
 

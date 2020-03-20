@@ -25,22 +25,21 @@ This example shows fetching and displaying an image from local storage as well a
 <block class="functional syntax" />
 
 ```SnackPlayer name=Function%20Component%20Example
-
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
+    paddingTop: 50
   },
   tinyLogo: {
     width: 50,
-    height: 50,
+    height: 50
   },
   logo: {
     width: 66,
-    height: 58,
-  },
+    height: 58
+  }
 });
 
 const DisplayAnImage = () => {
@@ -53,19 +52,19 @@ const DisplayAnImage = () => {
       <Image
         style={styles.tinyLogo}
         source={{
-          uri: 'https://reactnative.dev/img/tiny_logo.png',
+          uri: 'https://reactnative.dev/img/tiny_logo.png'
         }}
       />
       <Image
         style={styles.logo}
         source={{
           uri:
-            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg==',
+            'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='
         }}
       />
     </View>
   );
-}
+};
 
 export default DisplayAnImage;
 ```
@@ -73,22 +72,21 @@ export default DisplayAnImage;
 <block class="classical syntax" />
 
 ```SnackPlayer name=Class%20Component%20Example
-
 import React, { Component } from 'react';
 import { AppRegistry, View, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
+    paddingTop: 50
   },
   tinyLogo: {
     width: 50,
-    height: 50,
+    height: 50
   },
   logo: {
     width: 66,
-    height: 58,
-  },
+    height: 58
+  }
 });
 
 export default class DisplayAnImage extends Component {
@@ -101,17 +99,19 @@ export default class DisplayAnImage extends Component {
         />
         <Image
           style={styles.tinyLogo}
-          source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}}
+          source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }}
         />
         <Image
           style={styles.logo}
-          source={{uri: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='}}
+          source={{
+            uri:
+              'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAYAAAA6oTAqAAAAEXRFWHRTb2Z0d2FyZQBwbmdjcnVzaEB1SfMAAABQSURBVGje7dSxCQBACARB+2/ab8BEeQNhFi6WSYzYLYudDQYGBgYGBgYGBgYGBgYGBgZmcvDqYGBgmhivGQYGBgYGBgYGBgYGBgYGBgbmQw+P/eMrC5UTVAAAAABJRU5ErkJggg=='
+          }}
         />
       </View>
     );
   }
 }
-
 ```
 
 <block class="endBlock syntax" />
@@ -132,19 +132,18 @@ You can also add `style` to an image:
 <block class="functional syntax" />
 
 ```SnackPlayer name=Function%20Component%20Example
-
 import React from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 50,
+    paddingTop: 50
   },
   stretch: {
     width: 50,
     height: 200,
-    resizeMode: 'stretch',
-  },
+    resizeMode: 'stretch'
+  }
 });
 
 const DisplayAnImageWithStyle = () => {
@@ -156,7 +155,7 @@ const DisplayAnImageWithStyle = () => {
       />
     </View>
   );
-}
+};
 
 export default DisplayAnImageWithStyle;
 ```
@@ -164,7 +163,6 @@ export default DisplayAnImageWithStyle;
 <block class="classical syntax" />
 
 ```SnackPlayer name=Class%20Component%20Example
-
 import React, { Component } from 'react';
 import { View, Image, StyleSheet } from 'react-native';
 
@@ -188,7 +186,6 @@ export default class DisplayAnImageWithStyle extends Component {
     );
   }
 }
-
 ```
 
 <block class="endBlock syntax" />

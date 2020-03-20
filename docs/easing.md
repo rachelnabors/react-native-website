@@ -44,13 +44,22 @@ The following helpers are used to modify other easing functions.
 ## Example
 
 ```SnackPlayer name=Easing%20Demo
-import React from "react";
-import { Animated, Easing, SectionList, StatusBar, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import React from 'react';
+import {
+  Animated,
+  Easing,
+  SectionList,
+  StatusBar,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from 'react-native';
 
-export default App = () => {
+export default (App = () => {
   let opacity = new Animated.Value(0);
 
-  const animate = easing => {
+  const animate = (easing) => {
     opacity.setValue(0);
     Animated.timing(opacity, {
       toValue: 1,
@@ -76,9 +85,7 @@ export default App = () => {
   return (
     <View style={styles.container}>
       <StatusBar hidden={true} />
-      <Text style={styles.title}>
-        Press rows below to preview the Easing!
-      </Text>
+      <Text style={styles.title}>Press rows below to preview the Easing!</Text>
       <View style={styles.boxContainer}>
         <Animated.View style={animatedStyles} />
       </View>
@@ -100,50 +107,50 @@ export default App = () => {
       />
     </View>
   );
-};
+});
 
 const SECTIONS = [
   {
-    title: "Predefined animations",
+    title: 'Predefined animations',
     data: [
-      { title: "Bounce", easing: Easing.bounce },
-      { title: "Ease", easing: Easing.ease },
-      { title: "Elastic", easing: Easing.elastic(4) }
+      { title: 'Bounce', easing: Easing.bounce },
+      { title: 'Ease', easing: Easing.ease },
+      { title: 'Elastic', easing: Easing.elastic(4) }
     ]
   },
   {
-    title: "Standard functions",
+    title: 'Standard functions',
     data: [
-      { title: "Linear", easing: Easing.linear },
-      { title: "Quad", easing: Easing.quad },
-      { title: "Cubic", easing: Easing.cubic }
+      { title: 'Linear', easing: Easing.linear },
+      { title: 'Quad', easing: Easing.quad },
+      { title: 'Cubic', easing: Easing.cubic }
     ]
   },
   {
-    title: "Additional functions",
+    title: 'Additional functions',
     data: [
       {
-        title: "Bezier",
+        title: 'Bezier',
         easing: Easing.bezier(0, 2, 1, -1)
       },
-      { title: "Circle", easing: Easing.circle },
-      { title: "Sin", easing: Easing.sin },
-      { title: "Exp", easing: Easing.exp }
+      { title: 'Circle', easing: Easing.circle },
+      { title: 'Sin', easing: Easing.sin },
+      { title: 'Exp', easing: Easing.exp }
     ]
   },
   {
-    title: "Combinations",
+    title: 'Combinations',
     data: [
       {
-        title: "In + Bounce",
+        title: 'In + Bounce',
         easing: Easing.in(Easing.bounce)
       },
       {
-        title: "Out + Exp",
+        title: 'Out + Exp',
         easing: Easing.out(Easing.exp)
       },
       {
-        title: "InOut + Elastic",
+        title: 'InOut + Elastic',
         easing: Easing.inOut(Easing.elastic(1))
       }
     ]
@@ -153,32 +160,32 @@ const SECTIONS = [
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#20232a"
+    backgroundColor: '#20232a'
   },
   title: {
     marginTop: 10,
-    textAlign: "center",
-    color: "#61dafb"
+    textAlign: 'center',
+    color: '#61dafb'
   },
   boxContainer: {
     height: 160,
-    alignItems: "center"
+    alignItems: 'center'
   },
   box: {
     marginTop: 32,
     borderRadius: 4,
-    backgroundColor: "#61dafb"
+    backgroundColor: '#61dafb'
   },
   list: {
-    backgroundColor: "#fff"
+    backgroundColor: '#fff'
   },
   listHeader: {
     paddingHorizontal: 8,
     paddingVertical: 4,
-    backgroundColor: "#f4f4f4",
-    color: "#999",
+    backgroundColor: '#f4f4f4',
+    color: '#999',
     fontSize: 12,
-    textTransform: "uppercase"
+    textTransform: 'uppercase'
   },
   listRow: {
     padding: 8
@@ -358,9 +365,13 @@ A useful tool to visualize cubic bezier curves can be found at http://cubic-bezi
 
 ### `in()`
 
+<!-- prettier-ignore-start -->
+
 ```jsx
-static in easing;
+static in(easing);
 ```
+
+<!-- prettier-ignore-end -->
 
 Runs an easing function forwards.
 

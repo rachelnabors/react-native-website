@@ -27,11 +27,11 @@ export default class TextInANest extends Component {
     return (
       <Text style={styles.baseText}>
         <Text style={styles.titleText} onPress={this.onPressTitle}>
-          {this.state.titleText}{'\n'}{'\n'}
+          {this.state.titleText}
+          {'\n'}
+          {'\n'}
         </Text>
-        <Text numberOfLines={5}>
-          {this.state.bodyText}
-        </Text>
+        <Text numberOfLines={5}>{this.state.bodyText}</Text>
       </Text>
     );
   }
@@ -39,12 +39,12 @@ export default class TextInANest extends Component {
 
 const styles = StyleSheet.create({
   baseText: {
-    fontFamily: 'Cochin',
+    fontFamily: 'Cochin'
   },
   titleText: {
     fontSize: 20,
-    fontWeight: 'bold',
-  },
+    fontWeight: 'bold'
+  }
 });
 
 // skip this line if using Create React Native App
@@ -62,11 +62,9 @@ import { AppRegistry, Text } from 'react-native';
 export default class BoldAndBeautiful extends Component {
   render() {
     return (
-      <Text style={{fontWeight: 'bold'}}>
+      <Text style={{ fontWeight: 'bold' }}>
         I am bold
-        <Text style={{color: 'red'}}>
-          and red
-        </Text>
+        <Text style={{ color: 'red' }}>and red</Text>
       </Text>
     );
   }
@@ -97,7 +95,7 @@ export default class BlueIsCool extends Component {
     return (
       <Text>
         There is a blue square
-        <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+        <View style={{ width: 50, height: 50, backgroundColor: 'steelblue' }} />
         in between my text.
       </Text>
     );

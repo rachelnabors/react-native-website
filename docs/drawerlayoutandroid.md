@@ -8,16 +8,22 @@ React component that wraps the platform `DrawerLayout` (Android only). The Drawe
 ## Example
 
 ```SnackPlayer name=DrawerLayoutAndroid%20Component%20Example&supportedPlatforms=android
-import React, { useState } from "react";
-import { Button, DrawerLayoutAndroid, Text, StyleSheet, View } from "react-native";
+import React, { useState } from 'react';
+import {
+  Button,
+  DrawerLayoutAndroid,
+  Text,
+  StyleSheet,
+  View
+} from 'react-native';
 
 const App = () => {
-  const [drawerPosition, setDrawerPosition] = useState("left");
+  const [drawerPosition, setDrawerPosition] = useState('left');
   const changeDrawerPosition = () => {
-    if (drawerPosition === "left") {
-      setDrawerPosition("right");
+    if (drawerPosition === 'left') {
+      setDrawerPosition('right');
     } else {
-      setDrawerPosition("left");
+      setDrawerPosition('left');
     }
   };
 
@@ -52,16 +58,16 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    paddingTop: "50px",
-    backgroundColor: "#ecf0f1",
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: '50px',
+    backgroundColor: '#ecf0f1',
     padding: 8
   },
   navigationContainer: {
     flex: 1,
-    paddingTop:  "50px",
-    backgroundColor: "#fff",
+    paddingTop: '50px',
+    backgroundColor: '#fff',
     padding: 8
   }
 });

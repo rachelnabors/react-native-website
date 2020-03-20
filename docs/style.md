@@ -15,28 +15,28 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
+    marginTop: 50
   },
   bigBlue: {
     color: 'blue',
     fontWeight: 'bold',
-    fontSize: 30,
+    fontSize: 30
   },
   red: {
-    color: 'red',
-  },
+    color: 'red'
+  }
 });
 
-export default LotsOfStyles = () => {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.red}>just red</Text>
-        <Text style={styles.bigBlue}>just bigBlue</Text>
-        <Text style={[styles.bigBlue, styles.red]}>bigBlue, then red</Text>
-        <Text style={[styles.red, styles.bigBlue]}>red, then bigBlue</Text>
-      </View>
-    );
-}
+export default (LotsOfStyles = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.red}>just red</Text>
+      <Text style={styles.bigBlue}>just bigBlue</Text>
+      <Text style={[styles.bigBlue, styles.red]}>bigBlue, then red</Text>
+      <Text style={[styles.red, styles.bigBlue]}>red, then bigBlue</Text>
+    </View>
+  );
+});
 ```
 
 One common pattern is to make your component accept a `style` prop which in turn is used to style subcomponents. You can use this to make styles "cascade" the way they do in CSS.

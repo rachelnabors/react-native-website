@@ -19,8 +19,8 @@ title: Image Style Props
 <block class="functional syntax" />
 
 ```SnackPlayer name=Image%20Style%20Props%20Function%20Component%20Example
-import React from "react";
-import { View, Image, Text, StyleSheet } from "react-native";
+import React from 'react';
+import { View, Image, Text, StyleSheet } from 'react-native';
 
 export default function DisplayAnImageWithStyle() {
   return (
@@ -28,55 +28,55 @@ export default function DisplayAnImageWithStyle() {
       <View>
         <Image
           style={{
-            resizeMode: "cover",
+            resizeMode: 'cover',
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>resizeMode : cover</Text>
       </View>
       <View>
         <Image
           style={{
-            resizeMode: "contain",
+            resizeMode: 'contain',
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>resizeMode : contain</Text>
       </View>
       <View>
         <Image
           style={{
-            resizeMode: "stretch",
+            resizeMode: 'stretch',
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>resizeMode : stretch</Text>
       </View>
       <View>
         <Image
           style={{
-            resizeMode: "repeat",
+            resizeMode: 'repeat',
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>resizeMode : repeat</Text>
       </View>
       <View>
         <Image
           style={{
-            resizeMode: "center",
+            resizeMode: 'center',
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>resizeMode : center</Text>
       </View>
@@ -86,22 +86,21 @@ export default function DisplayAnImageWithStyle() {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "space-around",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
-
 ```
 
 <block class="classical syntax" />
 
 ```SnackPlayer name=Image%20Style%20Props%20Class%20Component%20Example
-import React, { Component } from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import React, { Component } from 'react';
+import { View, Image, StyleSheet, Text } from 'react-native';
 
 export default class DisplayAnImageWithStyle extends Component {
   render() {
@@ -110,55 +109,55 @@ export default class DisplayAnImageWithStyle extends Component {
         <View>
           <Image
             style={{
-              resizeMode: "cover",
+              resizeMode: 'cover',
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>resizeMode : cover</Text>
         </View>
         <View>
           <Image
             style={{
-              resizeMode: "contain",
+              resizeMode: 'contain',
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>resizeMode : contain</Text>
         </View>
         <View>
           <Image
             style={{
-              resizeMode: "stretch",
+              resizeMode: 'stretch',
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>resizeMode : stretch</Text>
         </View>
         <View>
           <Image
             style={{
-              resizeMode: "repeat",
+              resizeMode: 'repeat',
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>resizeMode : repeat</Text>
         </View>
         <View>
           <Image
             style={{
-              resizeMode: "center",
+              resizeMode: 'center',
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>resizeMode : center</Text>
         </View>
@@ -169,15 +168,14 @@ export default class DisplayAnImageWithStyle extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "space-around",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
-
 ```
 
 <block class="endBlock syntax" />
@@ -196,8 +194,8 @@ const styles = StyleSheet.create({
 <block class="functional syntax" />
 
 ```SnackPlayer name=Style%20Border%20Radius%20Function%20Component%20Example
-import React from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import React from 'react';
+import { View, Image, StyleSheet, Text } from 'react-native';
 
 export default function DisplayAnImageWithStyle() {
   return (
@@ -209,7 +207,7 @@ export default function DisplayAnImageWithStyle() {
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>borderTopRightRadius</Text>
       </View>
@@ -220,7 +218,7 @@ export default function DisplayAnImageWithStyle() {
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>borderBottomRightRadius</Text>
       </View>
@@ -231,7 +229,7 @@ export default function DisplayAnImageWithStyle() {
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>borderBottomLeftRadius</Text>
       </View>
@@ -242,7 +240,7 @@ export default function DisplayAnImageWithStyle() {
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>borderTopLeftRadius</Text>
       </View>
@@ -252,22 +250,21 @@ export default function DisplayAnImageWithStyle() {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "space-around",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
-
 ```
 
 <block class="classical syntax" />
 
 ```SnackPlayer name=Style%20Border%20Radius%20Class%20Component%20Example
-import React, { Component } from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import React, { Component } from 'react';
+import { View, Image, StyleSheet, Text } from 'react-native';
 
 export default class DisplayAnImageWithStyle extends Component {
   render() {
@@ -280,7 +277,7 @@ export default class DisplayAnImageWithStyle extends Component {
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>borderTopRightRadius</Text>
         </View>
@@ -291,7 +288,7 @@ export default class DisplayAnImageWithStyle extends Component {
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>borderBottomRightRadius</Text>
         </View>
@@ -302,7 +299,7 @@ export default class DisplayAnImageWithStyle extends Component {
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>borderBottomLeftRadius</Text>
         </View>
@@ -313,7 +310,7 @@ export default class DisplayAnImageWithStyle extends Component {
               height: 100,
               width: 200
             }}
-            source={require("@expo/snack-static/react-native-logo.png")}
+            source={require('@expo/snack-static/react-native-logo.png')}
           />
           <Text>borderTopLeftRadius</Text>
         </View>
@@ -324,12 +321,12 @@ export default class DisplayAnImageWithStyle extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "space-around",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
 ```
@@ -350,20 +347,20 @@ const styles = StyleSheet.create({
 <block class="functional syntax" />
 
 ```SnackPlayer name=Style%20BorderWidth%20and%20BorderColor%20Function%20Component%20Example
-import React from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import React from 'react';
+import { View, Image, StyleSheet, Text } from 'react-native';
 
 export default function DisplayAnImageWithStyle() {
   return (
     <View style={styles.container}>
       <Image
         style={{
-          borderColor: "red",
+          borderColor: 'red',
           borderWidth: 5,
           height: 100,
           width: 200
         }}
-        source={require("@expo/snack-static/react-native-logo.png")}
+        source={require('@expo/snack-static/react-native-logo.png')}
       />
       <Text>
         <Text>borderColor & borderWidth</Text>
@@ -374,12 +371,12 @@ export default function DisplayAnImageWithStyle() {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
 ```
@@ -387,8 +384,8 @@ const styles = StyleSheet.create({
 <block class="classical syntax" />
 
 ```SnackPlayer name=Style%20BorderWidth%20and%20BorderColor%20Class%20Component%20Example
-import React, { Component } from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import React, { Component } from 'react';
+import { View, Image, StyleSheet, Text } from 'react-native';
 
 export default class DisplayAnImageWithStyle extends Component {
   render() {
@@ -396,12 +393,12 @@ export default class DisplayAnImageWithStyle extends Component {
       <View style={styles.container}>
         <Image
           style={{
-            borderColor: "red",
+            borderColor: 'red',
             borderWidth: 5,
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>borderColor & borderWidth</Text>
       </View>
@@ -411,12 +408,12 @@ export default class DisplayAnImageWithStyle extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
 ```
@@ -437,20 +434,20 @@ const styles = StyleSheet.create({
 <block class="functional syntax" />
 
 ```SnackPlayer name=Style%20tintColor%20Function%20Component
-import React from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import React from 'react';
+import { View, Image, StyleSheet, Text } from 'react-native';
 
 export default function DisplayAnImageWithStyle() {
   return (
     <View style={styles.container}>
       <Image
         style={{
-          tintColor: "#000000",
-          resizeMode: "contain",
+          tintColor: '#000000',
+          resizeMode: 'contain',
           height: 100,
           width: 200
         }}
-        source={require("@expo/snack-static/react-native-logo.png")}
+        source={require('@expo/snack-static/react-native-logo.png')}
       />
       <Text>tintColor</Text>
     </View>
@@ -459,12 +456,12 @@ export default function DisplayAnImageWithStyle() {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "space-around",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
 ```
@@ -472,8 +469,8 @@ const styles = StyleSheet.create({
 <block class="classical syntax" />
 
 ```SnackPlayer name=Style%20tintColor%20Class%20Component
-import React, { Component } from "react";
-import { View, Image, StyleSheet, Text } from "react-native";
+import React, { Component } from 'react';
+import { View, Image, StyleSheet, Text } from 'react-native';
 
 export default class DisplayAnImageWithStyle extends Component {
   render() {
@@ -481,12 +478,12 @@ export default class DisplayAnImageWithStyle extends Component {
       <View style={styles.container}>
         <Image
           style={{
-            tintColor: "#000000",
-            resizeMode: "contain",
+            tintColor: '#000000',
+            resizeMode: 'contain',
             height: 100,
             width: 200
           }}
-          source={require("@expo/snack-static/react-native-logo.png")}
+          source={require('@expo/snack-static/react-native-logo.png')}
         />
         <Text>tintColor</Text>
       </View>
@@ -496,12 +493,12 @@ export default class DisplayAnImageWithStyle extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    display: "flex",
-    flexDirection: "vertical",
-    justifyContent: "space-around",
-    alignItems: "center",
-    height: "100%",
-    textAlign: "center"
+    display: 'flex',
+    flexDirection: 'vertical',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: '100%',
+    textAlign: 'center'
   }
 });
 ```

@@ -13,17 +13,17 @@ You can alternatively use `showWithGravity(message, duration, gravity)` to speci
 The 'showWithGravityAndOffset(message, duration, gravity, xOffset, yOffset)' method adds the ability to specify an offset with in pixels.
 
 ```SnackPlayer name=Toast%20Android%20API%20Example&supportedPlatforms=android
-import React from "react";
-import { View, StyleSheet, ToastAndroid, Button } from "react-native";
-import Constants from "expo-constants";
+import React from 'react';
+import { View, StyleSheet, ToastAndroid, Button } from 'react-native';
+import Constants from 'expo-constants';
 const App = () => {
   const showToast = () => {
-    ToastAndroid.show("A pikachu appeared nearby !", ToastAndroid.SHORT);
+    ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
   };
 
   const showToastWithGravity = () => {
     ToastAndroid.showWithGravity(
-      "All Your Base Are Belong To Us",
+      'All Your Base Are Belong To Us',
       ToastAndroid.SHORT,
       ToastAndroid.CENTER
     );
@@ -31,7 +31,7 @@ const App = () => {
 
   const showToastWithGravityAndOffset = () => {
     ToastAndroid.showWithGravityAndOffset(
-      "A wild toast appeared!",
+      'A wild toast appeared!',
       ToastAndroid.LONG,
       ToastAndroid.BOTTOM,
       25,
@@ -57,9 +57,9 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: "#888888",
+    backgroundColor: '#888888',
     padding: 8
   }
 });
@@ -72,9 +72,9 @@ export default App;
 The ToastAndroid API is imperative, but there is a way to expose a declarative component from it as in this example:
 
 ```SnackPlayer name=Advanced%20Toast%20Android%20API%20Example&supportedPlatforms=android
-import React, { useState, useEffect } from "react";
-import { View, StyleSheet, ToastAndroid, Button } from "react-native";
-import Constants from "expo-constants";
+import React, { useState, useEffect } from 'react';
+import { View, StyleSheet, ToastAndroid, Button } from 'react-native';
+import Constants from 'expo-constants';
 
 const Toast = ({ visible, message }) => {
   if (visible) {
@@ -110,9 +110,9 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: "#888888",
+    backgroundColor: '#888888',
     padding: 8
   }
 });

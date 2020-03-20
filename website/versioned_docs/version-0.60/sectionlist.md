@@ -28,27 +28,27 @@ import {
   Text,
   View,
   SafeAreaView,
-  SectionList,
+  SectionList
 } from 'react-native';
 import Constants from 'expo-constants';
 
 const DATA = [
   {
     title: 'Main dishes',
-    data: ['Pizza', 'Burger', 'Risotto'],
+    data: ['Pizza', 'Burger', 'Risotto']
   },
   {
     title: 'Sides',
-    data: ['French Fries', 'Onion Rings', 'Fried Shrimps'],
+    data: ['French Fries', 'Onion Rings', 'Fried Shrimps']
   },
   {
     title: 'Drinks',
-    data: ['Water', 'Coke', 'Beer'],
+    data: ['Water', 'Coke', 'Beer']
   },
   {
     title: 'Desserts',
-    data: ['Cheese Cake', 'Ice Cream'],
-  },
+    data: ['Cheese Cake', 'Ice Cream']
+  }
 ];
 
 function Item({ title }) {
@@ -78,19 +78,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: Constants.statusBarHeight,
-    marginHorizontal: 16,
+    marginHorizontal: 16
   },
   item: {
     backgroundColor: '#f9c2ff',
     padding: 20,
-    marginVertical: 8,
+    marginVertical: 8
   },
   header: {
-    fontSize: 32,
+    fontSize: 32
   },
   title: {
-    fontSize: 24,
-  },
+    fontSize: 24
+  }
 });
 ```
 

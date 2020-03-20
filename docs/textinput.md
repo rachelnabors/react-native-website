@@ -17,7 +17,7 @@ export default function UselessTextInput() {
   return (
     <TextInput
       style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
-      onChangeText={text => onChangeText(text)}
+      onChangeText={(text) => onChangeText(text)}
       value={value}
     />
   );
@@ -52,12 +52,13 @@ export default function UselessTextInputMultiline() {
       style={{
         backgroundColor: value,
         borderBottomColor: '#000000',
-        borderBottomWidth: 1,
-      }}>
+        borderBottomWidth: 1
+      }}
+    >
       <UselessTextInput
         multiline
         numberOfLines={4}
-        onChangeText={text => onChangeText(text)}
+        onChangeText={(text) => onChangeText(text)}
         value={value}
       />
     </View>

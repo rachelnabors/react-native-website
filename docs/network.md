@@ -87,7 +87,7 @@ Don't forget to catch any errors that may be thrown by `fetch`, otherwise they w
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, FlatList, Text, View } from 'react-native';
 
-export default App = () => {
+export default (App = () => {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
 
@@ -101,18 +101,22 @@ export default App = () => {
 
   return (
     <View style={{ flex: 1, padding: 24 }}>
-      {isLoading ? <ActivityIndicator/> : (
+      {isLoading ? (
+        <ActivityIndicator />
+      ) : (
         <FlatList
           data={data}
           keyExtractor={({ id }, index) => id}
           renderItem={({ item }) => (
-            <Text>{item.title}, {item.releaseYear}</Text>
+            <Text>
+              {item.title}, {item.releaseYear}
+            </Text>
           )}
         />
       )}
     </View>
   );
-};
+});
 ```
 
 <block class="classical syntax" />
@@ -148,19 +152,23 @@ export default class App extends Component {
 
     return (
       <View style={{ flex: 1, padding: 24 }}>
-        {isLoading ? <ActivityIndicator/> : (
+        {isLoading ? (
+          <ActivityIndicator />
+        ) : (
           <FlatList
             data={data}
             keyExtractor={({ id }, index) => id}
             renderItem={({ item }) => (
-              <Text>{item.title}, {item.releaseYear}</Text>
+              <Text>
+                {item.title}, {item.releaseYear}
+              </Text>
             )}
           />
         )}
       </View>
     );
   }
-};
+}
 ```
 
 <block class="endBlock syntax" />

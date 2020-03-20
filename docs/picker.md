@@ -8,11 +8,11 @@ Renders the native picker component on Android and iOS.
 ## Example
 
 ```SnackPlayer name=picker
-import React, { useState } from "react";
-import { View, Picker, StyleSheet } from "react-native";
+import React, { useState } from 'react';
+import { View, Picker, StyleSheet } from 'react-native';
 
 export default function App() {
-  const [selectedValue, setSelectedValue] = useState("java");
+  const [selectedValue, setSelectedValue] = useState('java');
   return (
     <View style={styles.container}>
       <Picker
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 40,
-    alignItems: "center"
+    alignItems: 'center'
   }
 });
 ```

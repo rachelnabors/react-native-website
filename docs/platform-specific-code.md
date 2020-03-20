@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'red'
       },
       android: {
-        backgroundColor: 'green',
+        backgroundColor: 'green'
       },
       default: {
         // other platforms, web for example
@@ -66,7 +66,7 @@ const Component = Platform.select({
 ```jsx
 const Component = Platform.select({
   native: () => require('ComponentForNative'),
-  default: () => require('ComponentForWeb'),
+  default: () => require('ComponentForWeb')
 })();
 
 <Component />;

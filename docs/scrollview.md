@@ -47,15 +47,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: Constants.statusBarHeight,
+    marginTop: Constants.statusBarHeight
   },
   scrollView: {
     backgroundColor: 'pink',
-    marginHorizontal: 20,
+    marginHorizontal: 20
   },
   text: {
-    fontSize: 42,
-  },
+    fontSize: 42
+  }
 });
 ```
 
@@ -249,9 +249,9 @@ Fades out the edges of the the scroll content.
 
 If the value is greater than 0, the fading edges will be set accordingly to the current scroll direction and position, indicating if there is more content to show.
 
-| Type               | Required | Default | Platform |
-| ------------------ | -------- | ------- | -------- |
-| number             | No       | 0       | Android  |
+| Type   | Required | Default | Platform |
+| ------ | -------- | ------- | -------- |
+| number | No       | 0       | Android  |
 
 ---
 

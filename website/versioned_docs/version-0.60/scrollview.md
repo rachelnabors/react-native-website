@@ -48,15 +48,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: Constants.statusBarHeight,
+    marginTop: Constants.statusBarHeight
   },
   scrollView: {
     backgroundColor: 'pink',
-    marginHorizontal: 20,
+    marginHorizontal: 20
   },
   text: {
-    fontSize: 42,
-  },
+    fontSize: 42
+  }
 });
 ```
 

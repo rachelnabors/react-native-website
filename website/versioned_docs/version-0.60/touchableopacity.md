@@ -26,42 +26,34 @@ renderButton: function() {
 ### Example
 
 ```SnackPlayer name=TouchableOpacity
-import React, { Component } from 'react'
-import {
-  StyleSheet,
-  TouchableOpacity,
-  Text,
-  View,
-} from 'react-native'
+import React, { Component } from 'react';
+import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 
 export default class App extends Component {
   constructor(props) {
-    super(props)
-    this.state = { count: 0 }
+    super(props);
+    this.state = { count: 0 };
   }
 
   onPress = () => {
     this.setState({
-      count: this.state.count+1
-    })
-  }
+      count: this.state.count + 1
+    });
+  };
 
- render() {
-   return (
-     <View style={styles.container}>
-       <TouchableOpacity
-         style={styles.button}
-         onPress={this.onPress}
-       >
-         <Text> Touch Here </Text>
-       </TouchableOpacity>
-       <View style={[styles.countContainer]}>
-         <Text style={[styles.countText]}>
-            { this.state.count !== 0 ? this.state.count: null}
+  render() {
+    return (
+      <View style={styles.container}>
+        <TouchableOpacity style={styles.button} onPress={this.onPress}>
+          <Text> Touch Here </Text>
+        </TouchableOpacity>
+        <View style={[styles.countContainer]}>
+          <Text style={[styles.countText]}>
+            {this.state.count !== 0 ? this.state.count : null}
           </Text>
         </View>
       </View>
-    )
+    );
   }
 }
 
@@ -83,7 +75,7 @@ const styles = StyleSheet.create({
   countText: {
     color: '#FF00FF'
   }
-})
+});
 ```
 
 ---

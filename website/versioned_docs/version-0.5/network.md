@@ -73,51 +73,50 @@ Don't forget to catch any errors that may be thrown by `fetch`, otherwise they w
 
 ```SnackPlayer name=Fetch%20Example
 import React from 'react';
-import { FlatList, ActivityIndicator, Text, View  } from 'react-native';
+import { FlatList, ActivityIndicator, Text, View } from 'react-native';
 
 export default class FetchExample extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state ={ isLoading: true}
+    this.state = { isLoading: true };
   }
 
-  componentDidMount(){
+  componentDidMount() {
     return fetch('https://reactnative.dev/movies.json')
       .then((response) => response.json())
       .then((responseJson) => {
-
-        this.setState({
-          isLoading: false,
-          dataSource: responseJson.movies,
-        }, function(){
-
-        });
-
+        this.setState(
+          {
+            isLoading: false,
+            dataSource: responseJson.movies
+          },
+          function() {}
+        );
       })
-      .catch((error) =>{
+      .catch((error) => {
         console.error(error);
       });
   }
 
-
-
-  render(){
-
-    if(this.state.isLoading){
-      return(
-        <View style={{flex: 1, padding: 20}}>
-          <ActivityIndicator/>
+  render() {
+    if (this.state.isLoading) {
+      return (
+        <View style={{ flex: 1, padding: 20 }}>
+          <ActivityIndicator />
         </View>
-      )
+      );
     }
 
-    return(
-      <View style={{flex: 1, paddingTop:20}}>
+    return (
+      <View style={{ flex: 1, paddingTop: 20 }}>
         <FlatList
           data={this.state.dataSource}
-          renderItem={({item}) => <Text>{item.title}, {item.releaseYear}</Text>}
-          keyExtractor={({id}, index) => id}
+          renderItem={({ item }) => (
+            <Text>
+              {item.title}, {item.releaseYear}
+            </Text>
+          )}
+          keyExtractor={({ id }, index) => id}
         />
       </View>
     );

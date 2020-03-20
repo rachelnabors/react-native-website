@@ -43,8 +43,8 @@ function MyComponent(props) {
 <block class="functional syntax" />
 
 ```SnackPlayer name=TouchableHighlight%20Function%20Component%20Example
-import React, { useState } from "react";
-import { StyleSheet, TouchableHighlight, Text, View } from "react-native";
+import React, { useState } from 'react';
+import { StyleSheet, TouchableHighlight, Text, View } from 'react-native';
 
 export default function TouchableHighlightExample() {
   const [count, setCount] = useState(0);
@@ -69,20 +69,20 @@ export default function TouchableHighlightExample() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     paddingHorizontal: 10
   },
   button: {
-    alignItems: "center",
-    backgroundColor: "#DDDDDD",
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
     padding: 10
   },
   countContainer: {
-    alignItems: "center",
+    alignItems: 'center',
     padding: 10
   },
   countText: {
-    color: "#FF00FF"
+    color: '#FF00FF'
   }
 });
 ```
@@ -90,8 +90,8 @@ const styles = StyleSheet.create({
 <block class="classical syntax" />
 
 ```SnackPlayer name=TouchableHighlight%20Class%20Component%20Example
-import React, { Component } from "react";
-import { StyleSheet, TouchableHighlight, Text, View } from "react-native";
+import React, { Component } from 'react';
+import { StyleSheet, TouchableHighlight, Text, View } from 'react-native';
 
 export default class App extends Component {
   constructor(props) {
@@ -124,20 +124,20 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: 'center',
     paddingHorizontal: 10
   },
   button: {
-    alignItems: "center",
-    backgroundColor: "#DDDDDD",
+    alignItems: 'center',
+    backgroundColor: '#DDDDDD',
     padding: 10
   },
   countContainer: {
-    alignItems: "center",
+    alignItems: 'center',
     padding: 10
   },
   countText: {
-    color: "#FF00FF"
+    color: '#FF00FF'
   }
 });
 ```

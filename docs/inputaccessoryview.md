@@ -9,9 +9,14 @@ To use this component wrap your custom toolbar with the InputAccessoryView compo
 
 ```SnackPlayer name=InputAccessoryView&supportedPlatforms=ios
 import React, { useState } from 'react';
-import { Button, InputAccessoryView, ScrollView, TextInput } from 'react-native';
+import {
+  Button,
+  InputAccessoryView,
+  ScrollView,
+  TextInput
+} from 'react-native';
 
-export default App = () => {
+export default (App = () => {
   const inputAccessoryViewID = 'uniqueID';
   const initialText = 'Placeholder Text';
   const [text, setText] = useState(initialText);
@@ -25,19 +30,16 @@ export default App = () => {
             marginTop: 50
           }}
           inputAccessoryViewID={inputAccessoryViewID}
-          onChangeText={text => setText(text)}
+          onChangeText={(text) => setText(text)}
           value={text}
         />
       </ScrollView>
       <InputAccessoryView nativeID={inputAccessoryViewID}>
-        <Button
-          onPress={() => setText(initialText)}
-          title="Reset Text"
-        />
+        <Button onPress={() => setText(initialText)} title="Reset Text" />
       </InputAccessoryView>
     </>
   );
-}
+});
 ```
 
 This component can also be used to create sticky text inputs (text inputs which are anchored to the top of the keyboard). To do this, wrap a `TextInput` with the `InputAccessoryView` component, and don't set a `nativeID`. For an example, look at [InputAccessoryViewExample.js](https://github.com/facebook/react-native/blob/master/RNTester/js/examples/InputAccessoryView/InputAccessoryViewExample.js).

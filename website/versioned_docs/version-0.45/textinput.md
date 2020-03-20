@@ -21,8 +21,8 @@ export default class UselessTextInput extends Component {
   render() {
     return (
       <TextInput
-        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-        onChangeText={(text) => this.setState({text})}
+        style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+        onChangeText={(text) => this.setState({ text })}
         value={this.state.text}
       />
     );
@@ -44,8 +44,8 @@ class UselessTextInput extends Component {
     return (
       <TextInput
         {...this.props} // Inherit any props passed to it; e.g., multiline, numberOfLines below
-        editable = {true}
-        maxLength = {40}
+        editable={true}
+        maxLength={40}
       />
     );
   }
@@ -55,7 +55,7 @@ export default class UselessTextInputMultiline extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: 'Useless Multiline Placeholder',
+      text: 'Useless Multiline Placeholder'
     };
   }
 
@@ -63,26 +63,28 @@ export default class UselessTextInputMultiline extends Component {
   // color.
   render() {
     return (
-     <View style={{
-       backgroundColor: this.state.text,
-       borderBottomColor: '#000000',
-       borderBottomWidth: 1 }}
-     >
-       <UselessTextInput
-         multiline = {true}
-         numberOfLines = {4}
-         onChangeText={(text) => this.setState({text})}
-         value={this.state.text}
-       />
-     </View>
+      <View
+        style={{
+          backgroundColor: this.state.text,
+          borderBottomColor: '#000000',
+          borderBottomWidth: 1
+        }}
+      >
+        <UselessTextInput
+          multiline={true}
+          numberOfLines={4}
+          onChangeText={(text) => this.setState({ text })}
+          value={this.state.text}
+        />
+      </View>
     );
   }
 }
 
 // skip these lines if using Create React Native App
 AppRegistry.registerComponent(
- 'AwesomeProject',
- () => UselessTextInputMultiline
+  'AwesomeProject',
+  () => UselessTextInputMultiline
 );
 ```
 

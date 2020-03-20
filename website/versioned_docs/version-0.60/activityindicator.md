@@ -9,13 +9,8 @@ Displays a circular loading indicator.
 ### Example
 
 ```SnackPlayer name=activityindicator
-import React, { Component } from 'react'
-import {
-  ActivityIndicator,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native'
+import React, { Component } from 'react';
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 
 export default class App extends Component {
   render() {
@@ -26,7 +21,7 @@ export default class App extends Component {
         <ActivityIndicator size="large" color="#0000ff" />
         <ActivityIndicator size="small" color="#00ff00" />
       </View>
-    )
+    );
   }
 }
 
@@ -40,7 +35,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     padding: 10
   }
-})
+});
 ```
 
 ---

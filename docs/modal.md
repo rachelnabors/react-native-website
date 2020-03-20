@@ -21,7 +21,7 @@ The Modal component is a basic way to present content above an enclosing view.
 <block class="functional syntax" />
 
 ```SnackPlayer name=Modal&supportedPlatforms=android,ios
-import React, { Component, useState } from "react";
+import React, { Component, useState } from 'react';
 import {
   Alert,
   Modal,
@@ -29,7 +29,7 @@ import {
   Text,
   TouchableHighlight,
   View
-} from "react-native";
+} from 'react-native';
 
 const App = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -40,7 +40,7 @@ const App = () => {
         transparent={true}
         visible={modalVisible}
         onRequestClose={() => {
-          Alert.alert("Modal has been closed.");
+          Alert.alert('Modal has been closed.');
         }}
       >
         <View style={styles.centeredView}>
@@ -48,7 +48,7 @@ const App = () => {
             <Text style={styles.modalText}>Hello World!</Text>
 
             <TouchableHighlight
-              style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+              style={{ ...styles.openButton, backgroundColor: '#2196F3' }}
               onPress={() => {
                 setModalVisible(!modalVisible);
               }}
@@ -74,17 +74,17 @@ const App = () => {
 const styles = StyleSheet.create({
   centeredView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     marginTop: 22
   },
   modalView: {
     margin: 20,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     borderRadius: 20,
     padding: 35,
-    alignItems: "center",
-    shadowColor: "#000",
+    alignItems: 'center',
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2
@@ -94,19 +94,19 @@ const styles = StyleSheet.create({
     elevation: 5
   },
   openButton: {
-    backgroundColor: "#F194FF",
+    backgroundColor: '#F194FF',
     borderRadius: 20,
     padding: 10,
     elevation: 2
   },
   textStyle: {
-    color: "white",
-    fontWeight: "bold",
-    textAlign: "center"
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center'
   },
   modalText: {
     marginBottom: 15,
-    textAlign: "center"
+    textAlign: 'center'
   }
 });
 
@@ -116,7 +116,7 @@ export default App;
 <block class="classical syntax" />
 
 ```SnackPlayer name=Modal&supportedPlatforms=android,ios
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   Alert,
   Modal,
@@ -124,7 +124,7 @@ import {
   Text,
   TouchableHighlight,
   View
-} from "react-native";
+} from 'react-native';
 
 class App extends Component {
   state = {
@@ -133,7 +133,7 @@ class App extends Component {
 
   setModalVisible = (visible) => {
     this.setState({ modalVisible: visible });
-  }
+  };
 
   render() {
     const { modalVisible } = this.state;
@@ -144,7 +144,7 @@ class App extends Component {
           transparent={true}
           visible={modalVisible}
           onRequestClose={() => {
-            Alert.alert("Modal has been closed.");
+            Alert.alert('Modal has been closed.');
           }}
         >
           <View style={styles.centeredView}>
@@ -152,7 +152,7 @@ class App extends Component {
               <Text style={styles.modalText}>Hello World!</Text>
 
               <TouchableHighlight
-                style={{ ...styles.openButton, backgroundColor: "#2196F3" }}
+                style={{ ...styles.openButton, backgroundColor: '#2196F3' }}
                 onPress={() => {
                   this.setModalVisible(!modalVisible);
                 }}
@@ -179,17 +179,17 @@ class App extends Component {
 const styles = StyleSheet.create({
   centeredView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     marginTop: 22
   },
   modalView: {
     margin: 20,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     borderRadius: 20,
     padding: 35,
-    alignItems: "center",
-    shadowColor: "#000",
+    alignItems: 'center',
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2
@@ -199,19 +199,19 @@ const styles = StyleSheet.create({
     elevation: 5
   },
   openButton: {
-    backgroundColor: "#F194FF",
+    backgroundColor: '#F194FF',
     borderRadius: 20,
     padding: 10,
     elevation: 2
   },
   textStyle: {
-    color: "white",
-    fontWeight: "bold",
-    textAlign: "center"
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center'
   },
   modalText: {
     marginBottom: 15,
-    textAlign: "center"
+    textAlign: 'center'
   }
 });
 

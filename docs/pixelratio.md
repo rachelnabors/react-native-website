@@ -30,17 +30,25 @@ In React Native, everything in JavaScript and within the layout engine works wit
 ## Example
 
 ```SnackPlayer name=PixelRatio%20Example
-import React from "react";
-import { Image, PixelRatio, ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
+import React from 'react';
+import {
+  Image,
+  PixelRatio,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View
+} from 'react-native';
 
 const size = 50;
 const cat = {
-  uri: "https://reactnative.dev/docs/assets/p_cat1.png",
+  uri: 'https://reactnative.dev/docs/assets/p_cat1.png',
   width: size,
   height: size
 };
 
-export default App = () => (
+export default (App = () => (
   <ScrollView style={styles.scrollContainer}>
     <View style={styles.container}>
       <Text>Current Pixel Ratio is:</Text>
@@ -69,17 +77,17 @@ export default App = () => (
       />
     </View>
   </ScrollView>
-);
+));
 
 const styles = StyleSheet.create({
   scrollContainer: {
     flext: 1,
-    marginTop: "2em",
-    justifyContent: "center",
+    marginTop: '2em',
+    justifyContent: 'center'
   },
   container: {
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   value: {
     fontSize: 24,
@@ -133,8 +141,8 @@ static getFontScale(): number
 
 Returns the scaling factor for font sizes. This is the ratio that is used to calculate the absolute font size, so any elements that heavily depend on that should use this to do calculations.
 
-* on Android value reflects the user preference set in **Settings > Display > Font size** 
-* on iOS it will always return the default pixel ratio
+- on Android value reflects the user preference set in **Settings > Display > Font size**
+- on iOS it will always return the default pixel ratio
 
 If a font scale is not set, this returns the device pixel ratio.
 
